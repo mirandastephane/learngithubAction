@@ -16,7 +16,6 @@ jobs:
 
       - name: Cypress run build
         uses: cypress-io/github-action@v6
-        timeout-minutes: 1
         with:
           start: npm start
           build: npm run test
