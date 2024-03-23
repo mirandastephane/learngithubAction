@@ -18,8 +18,5 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: npm run
-          start: npm start
+          start: npx cypress run
           browser: chrome
-
-      - name: Run Cypress API tests
-        run: npx cypress run --spec "cypress/e2e/usuarios.cy.js"
