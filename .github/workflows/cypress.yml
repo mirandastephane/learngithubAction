@@ -18,5 +18,10 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: npm run
-          start: npx cypress run
+          start: npx cypress open
           browser: chrome
+      - name: App run
+        uses: cypress-io/github-action@v6
+        with:
+          start: npx cypress run
+      
